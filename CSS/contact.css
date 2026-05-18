@@ -1,14 +1,4 @@
-html,
-body {
 
-    cursor: default !important;
-}
-
-a,
-button {
-
-    cursor: pointer !important;
-}
 /* =========================================================
    RESET
 ========================================================= */
@@ -713,4 +703,24 @@ body {
         transform:
             translateY(140vh);
     }
+}
+body {
+
+    cursor: default !important;
+}
+
+a,
+button {
+
+    cursor: pointer !important;
+}
+
+/* FORCE CURSOR VISIBILITY */
+
+.bg-grid,
+.contact-bg-glow,
+.orb,
+.light-line {
+
+    pointer-events: none !important;
 }
