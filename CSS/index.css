@@ -2177,19 +2177,14 @@ body {
         overflow-x: hidden;
     }
 
-    body {
-
-        min-height: 100vh;
-    }
-
     /* =========================
-       NAVBAR
+       NAV
     ========================= */
 
     .nav {
 
         padding:
-            22px 18px;
+            24px 18px;
 
         display: flex;
 
@@ -2197,143 +2192,43 @@ body {
 
         align-items: center;
 
-        gap: 12px;
-
-        background:
-            rgba(0,0,0,.45);
-
-        backdrop-filter:
-            blur(12px);
-
-        -webkit-backdrop-filter:
-            blur(12px);
+        gap: 10px;
     }
 
     .nav a {
 
         font-size: 12px;
-
-        letter-spacing: -.2px;
     }
 
     /* =========================
-       HERO SECTION
+       HERO
     ========================= */
 
     .hero {
 
-        min-height: 100vh;
-
-        height: auto;
+        min-height: 100svh;
 
         padding:
-            120px 20px 60px;
+            120px 20px 40px;
 
-        display: flex;
-
-        flex-direction: column;
-
-        justify-content: space-between;
-    }
-
-    /* =========================
-       HERO CONTENT
-    ========================= */
-
-    .hero-content {
-
-        width: 100%;
-
-        padding: 0;
-    }
-
-    /* =========================
-       HERO TITLE
-    ========================= */
-
-    .hero-title {
-
-        font-size: 4.8rem;
-
-        line-height: .88;
-
-        letter-spacing: -4px;
-
-        max-width: 100%;
-    }
-
-    /* =========================
-       CENTER TEXT
-    ========================= */
-
-    .hero-center {
+        overflow: hidden;
 
         position: relative;
-
-        z-index: 2;
-
-        margin-top: 120px;
     }
 
     /* =========================
-       HERO BOTTOM
+       HERO BG
     ========================= */
 
-    .hero-bottom {
+    .hero-bg {
 
-        display: flex;
+        width: 150vw;
 
-        flex-direction: column;
+        height: 100%;
 
-        align-items: flex-start;
+        object-fit: cover;
 
-        gap: 24px;
-
-        margin-top: 80px;
-    }
-
-    .hero-bottom p {
-
-        font-size: 15px;
-
-        line-height: 1.5;
-
-        max-width: 100%;
-    }
-
-    /* =========================
-       SOCIAL LINKS
-    ========================= */
-
-    .hero-socials {
-
-        width: 100%;
-
-        display: flex;
-
-        justify-content: space-between;
-
-        align-items: center;
-
-        margin-top: 40px;
-    }
-
-    .hero-socials a {
-
-        font-size: 14px;
-    }
-
-    /* =========================
-       BIG NUMBER BG
-    ========================= */
-
-    .hero-bg-number {
-
-        width: 130vw;
-
-        max-width: none;
-
-        opacity: .22;
+        position: absolute;
 
         top: 50%;
 
@@ -2341,59 +2236,178 @@ body {
 
         transform:
             translate(-50%, -50%);
+
+        opacity: .24;
     }
 
     /* =========================
-       GRID
+       OVERLAY
     ========================= */
 
-    .bg-grid {
+    .overlay {
 
-        opacity: .12;
-
-        background-size:
-            42px 42px;
+        background:
+            rgba(0,0,0,.45);
     }
 
     /* =========================
-       ORBS / GLOW
+       CENTER TEXT
     ========================= */
 
-    .orb,
-    .contact-bg-glow {
+    .center-text {
 
-        opacity: .28;
+        position: absolute;
 
-        filter:
-            blur(90px);
+        top: 48%;
+
+        left: 50%;
+
+        transform:
+            translate(-50%, -50%);
+
+        z-index: 5;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .center-text h1 {
+
+        font-size: 4.5rem;
+
+        line-height: .88;
+
+        letter-spacing: -4px;
+    }
+
+    .lastname {
+
+        display: block;
     }
 
     /* =========================
-       LIGHT LINES
+       SIDE TEXT
     ========================= */
 
-    .light-line {
+    .side-text {
 
-        opacity: .35;
+        position: absolute;
+
+        bottom: 120px;
+
+        z-index: 5;
+
+        width: 42%;
+    }
+
+    .side-text.left {
+
+        left: 20px;
+    }
+
+    .side-text.right {
+
+        right: 20px;
+
+        text-align: right;
+    }
+
+    .side-text p {
+
+        font-size: 13px;
+
+        line-height: 1.45;
+
+        color:
+            rgba(255,255,255,.72);
     }
 
     /* =========================
-       ABOUT SECTION
+       BOTTOM LINKS
+    ========================= */
+
+    .bottom {
+
+        position: absolute;
+
+        bottom: 35px;
+
+        left: 20px;
+
+        right: 20px;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        z-index: 5;
+    }
+
+    .bottom span {
+
+        font-size: 13px;
+
+        color:
+            rgba(255,255,255,.7);
+    }
+
+    /* =========================
+       ABOUT
     ========================= */
 
     .about {
 
         padding:
-            120px 20px 80px;
+            120px 20px;
     }
 
     .about-text {
+
+        font-size: 2rem;
+
+        line-height: 1.25;
+
+        letter-spacing: -1px;
+    }
+
+    /* =========================
+       MANTRA SECTION
+    ========================= */
+
+    .mantra-section {
+
+        min-height: 90vh;
+
+        padding:
+            100px 20px;
+
+        overflow: hidden;
+    }
+
+    .mantra-text h2 {
 
         font-size: 2.2rem;
 
         line-height: 1.1;
 
         letter-spacing: -2px;
+
+        text-align: center;
+    }
+
+    /* =========================
+       CIRCLES
+    ========================= */
+
+    .circle {
+
+        transform:
+            scale(.7);
+
+        opacity: .45;
     }
 
     /* =========================
@@ -2404,6 +2418,11 @@ body {
 
         padding:
             120px 14px;
+    }
+
+    .projects-heading {
+
+        margin-bottom: 50px;
     }
 
     .projects-wrap {
@@ -2428,9 +2447,9 @@ body {
 
     .project-image {
 
-        height: auto;
-
         padding: 12px;
+
+        height: auto;
     }
 
     .project-image img {
@@ -2450,6 +2469,8 @@ body {
 
         padding:
             0 18px 24px;
+
+        height: auto;
     }
 
     .project-info {
@@ -2459,9 +2480,9 @@ body {
 
     .project-info h3 {
 
-        font-size: 1.5rem;
+        font-size: 1.45rem;
 
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     .project-info p {
@@ -2475,9 +2496,7 @@ body {
 
         width: 100%;
 
-        height: 54px;
-
-        font-size: 14px;
+        height: 52px;
     }
 
     /* =========================
@@ -2486,33 +2505,45 @@ body {
 
     .contact-section {
 
+        flex-direction: column;
+
         padding:
-            140px 20px 80px;
+            100px 20px;
+
+        gap: 40px;
     }
 
-    .contact-title {
+    .contact-left img {
 
-        font-size: 18vw;
+        width: 100%;
 
-        line-height: .9;
-
-        letter-spacing: -4px;
+        border-radius: 20px;
     }
 
-    .contact-email {
+    .contact-right {
 
-        font-size: 1.4rem;
+        width: 100%;
+    }
 
-        line-height: 1.4;
+    .contact-top h2 {
+
+        font-size: 2rem;
+
+        line-height: 1.1;
+
+        letter-spacing: -1px;
+    }
+
+    .contact-mail p {
+
+        font-size: 1rem;
 
         word-break: break-word;
     }
 
-    .social-grid {
+    .contact-links {
 
-        display: flex;
-
-        flex-direction: column;
+        flex-wrap: wrap;
 
         gap: 18px;
     }
