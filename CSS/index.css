@@ -13,6 +13,17 @@ html {
 
     scroll-behavior: smooth;
 }
+body {
+
+    cursor: default;
+   
+}
+
+a,
+button {
+
+    cursor: pointer;
+}
 
 img,
 button {
