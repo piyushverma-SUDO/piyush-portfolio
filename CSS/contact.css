@@ -1,11 +1,7 @@
-
 html,
-body,
-*,
-*::before,
-*::after {
+body {
 
-    cursor: auto !important;
+    cursor: default !important;
 }
 
 a,
