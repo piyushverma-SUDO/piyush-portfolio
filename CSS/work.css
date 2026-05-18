@@ -1,3 +1,17 @@
+html,
+body,
+*,
+*::before,
+*::after {
+
+    cursor: auto !important;
+}
+
+a,
+button {
+
+    cursor: pointer !important;
+}
 /* =========================================================
    RESET
 ========================================================= */
@@ -27,63 +41,10 @@ body {
 
     font-family: Arial, sans-serif;
 
-    cursor: none;
+   
 }
 
-/* =========================================================
-   CUSTOM CURSOR
-========================================================= */
 
-.custom-cursor {
-
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%;
-
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    pointer-events: none;
-
-    z-index: 999999;
-
-    transform:
-        translate(-50%, -50%);
-
-    background:
-        rgba(255, 255, 255, 0.1);
-
-    border:
-        1px solid rgba(255, 255, 255, 0.18);
-
-    backdrop-filter:
-        blur(10px);
-
-    transition:
-        width .25s ease,
-        height .25s ease,
-        transform .12s ease;
-}
-
-/* ACTIVE */
-
-.custom-cursor.active {
-
-    width: 54px;
-
-    height: 54px;
-}
-
-/* CLICK */
-
-.custom-cursor.click {
-
-    transform:
-        translate(-50%, -50%) scale(.72);
-}
 
 /* =========================================================
    NAV
